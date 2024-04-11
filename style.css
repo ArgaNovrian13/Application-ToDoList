@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  background: #159957; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #155799,
+    #159957
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #155799,
+    #159957
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  min-height: 80vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 70px auto;
+}
+.wrapper {
+  border-radius: 6px;
+  width: 350px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.wrapper h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.wrapper form {
+  margin: 30px auto;
+}
+.wrapper form input[type="text"] {
+  width: 70%;
+  height: 45px;
+  position: relative;
+  left: 23px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  caret-color: #83e85a;
+}
+.wrapper form input[type="text"]:focus {
+  text-indent: 5px;
+  outline: none;
+  box-shadow: 2px 2px 5px #000;
+}
+.wrapper form input[type="text"]::placeholder {
+  color: #000;
+  position: relative;
+  left: 3px;
+  font-size: 20px;
+}
+
+.wrapper form button {
+  width: 50px;
+  height: 45px;
+  font-size: 30px;
+  float: right;
+  position: relative;
+  bottom: 45px;
+  right: 25px;
+  background-color: #83e85a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper form button:hover {
+  background-color: #04aa6d;
+}
+ul {
+  overflow: auto;
+  height: 200px;
+  scroll-behavior: smooth;
+  width: 350px;
+}
+.wrapper form ~ ul li {
+  margin: 20px;
+  width: 72%;
+  height: 40px;
+  list-style: none;
+  background-color: #f2c94c;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px;
+}
+.silang {
+  width: 50px;
+  height: 40px;
+  font-size: 25px;
+  background-color: rgb(241, 23, 23);
+  float: right;
+  position: relative;
+  top: -10px;
+  left: 76px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.wrapper form ~ .keterangan-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-size: 21px;
+  position: relative;
+  left: 10px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+.wrapper form ~ .keterangan-list > p {
+  position: relative;
+  bottom: 10px;
+}
+.wrapper form ~ .keterangan-list > button {
+  font-size: 18px;
+  position: absolute;
+  left: 236px;
+  height: 45px;
+  background-color: #83e85a;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper form ~ .keterangan-list button:hover {
+  background-color: #04aa6d;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h2>To Do List</h2>
+        <form action="">
+          <input
+            type="text"
+            name="todo"
+            id="todo"
+            placeholder="Add You New Todo..."
+          />
+          <div class="icon-plus">
+            <button type="button" id="add">+</button>
+          </div>
+        </form>
+        <ul id="list"></ul>
+        <div class="keterangan-list">
+          <p>You Have <span id="jml-task">0</span> Pending Task</p>
+          <button id="clear">Clear All</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
